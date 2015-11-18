@@ -1,0 +1,97 @@
+/*---------------------------------------------------------
+ * Forms
+---------------------------------------------------------*/
+.search__form,
+.header__aside-search {
+  position: relative;
+  height: 36px;
+  width: 100%;
+  position: relative;
+  min-width: 36px;
+  width: 0%;
+  height: 36px;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 1s ease-in-out;
+     -moz-transition: width 1s ease-in-out;
+      -ms-transition: width 1s ease-in-out;
+       -o-transition: width 1s ease-in-out;
+          transition: width 1s ease-in-out;
+}
+.search__form--input{
+ position: absolute;
+ top: 0;
+ right: 0;
+ border: 0;
+ outline: 0;
+ border: 1px solid $blue;
+ width: 264px;
+ height: 36px;
+ margin: 0;
+ padding: 0.25em 36px 0.25em 0.5em;
+}
+.search__form--icon,
+.search__form--submit{
+  width: 36px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  cursor:pointer;
+  background: $blue url(images/icons/icon-spyglass.png) center center no-repeat;
+}
+
+.search__form-open{
+  width:100%;
+}
+.nav__search {
+  display: inline-block;
+  width: 100%;
+  padding: 0 1em;
+  @include media_query(1090px) {
+    display: none;
+  }
+  .search__form {
+    width: 100%;
+    min-width: none;
+  }
+  .search__form--input{
+    position: relative;
+    width: 95%;
+    border: none;
+  }
+  .search__form--submit{
+    background: #fff url(images/icons/icon-spyglass-blue.png) center center no-repeat;
+  }
+}
+
+.header-divider__searchform {
+  width: 390px;
+  height: 48px;
+  overflow: hidden;
+  input[type="text"] {
+    height: 48px;
+    width: 250px;
+    margin-right: 1em;
+    border: 1px solid $light-blue;
+    float: left;
+    padding-left: 1em;
+  }
+  input[type="submit"] {
+    background-color: $light-blue;
+    text-align: center;
+    color: #fff;
+    width: 124px;
+    height: 48px;
+    float: left;
+    outline: 0;
+    border: none;
+    letter-spacing: 2px;
+  }
+
+}

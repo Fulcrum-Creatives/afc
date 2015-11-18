@@ -1,0 +1,81 @@
+/*---------------------------------------------------------
+ * Header Aside
+---------------------------------------------------------*/
+.header__aside-search {
+  right: 0px;
+  z-index: 100;
+  display: none;
+  -webkit-transition: width 1s ease-in-out;
+     -moz-transition: width 1s ease-in-out;
+      -ms-transition: width 1s ease-in-out;
+       -o-transition: width 1s ease-in-out;
+          transition: width 1s ease-in-out;
+  @include media_query(1090px) {
+    display: block;
+  }
+}
+.header__aside-search,
+.header__aside-donate,
+.header__aside-menu {
+  position: absolute;
+  top: 0px;
+  margin: 30px 0 0;
+}
+.header__aside-donate{
+  background: $green url(images/icons/icon-dollar.png) center center no-repeat;
+  width: 36px;
+  height: 36px;
+  right: 36px;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &:before {
+    content: "";
+    text-transform: uppercase;
+    left: -56px;
+    top: 10px;
+    color: $green;
+    position: absolute;
+    font-size: 0.8em;
+    @include media_query(350px) {
+      content: "doante";
+    }
+  }
+  @include media_query(350px) {
+    right: 79px;
+  }
+  @include media_query(1090px) {
+    right: 36px;
+    &:before {
+      content: "";
+    }
+  }
+}
+.header__aside-menu {
+  background: $blue url(images/icons/menu.png) center center no-repeat;
+  width: 36px;
+  height: 36px;
+  right: 0px;
+  display: block;
+  &:hover {
+    cursor: pointer;
+  }
+  &:before {
+    content: "";
+    text-transform: uppercase;
+    left: -40px;
+    top: 10px;
+    color: $blue;
+    position: absolute;
+    font-size: 0.8em;
+    @include media_query(350px) {
+      content: "menu";
+    }
+  }
+  @include media_query(1090px) {
+    background-color: #fff;
+    display: none;
+  }
+}

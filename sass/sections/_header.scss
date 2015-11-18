@@ -1,0 +1,11 @@
+/*---------------------------------------------------------
+ * Header
+---------------------------------------------------------*/
+.header {
+  clear: fix;
+  position: relative;
+  z-index: 10;
+  .content__wrapper {
+    overflow: visible;
+  }
+}

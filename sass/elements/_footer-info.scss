@@ -1,0 +1,22 @@
+/*---------------------------------------------------------
+ * Footer Info
+---------------------------------------------------------*/
+.footer__info {
+  clear: both;
+  padding: 2em 0 0;
+  ul {
+    @include hor-list-pos(center);
+    padding: 0;
+    li {
+      margin-right: 1em;
+      margin-bottom: 1.5em;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+}

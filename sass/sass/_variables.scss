@@ -1,0 +1,33 @@
+// Colors
+//================================================================================
+// text colors
+$color__font: #211d1e;
+$color__header: #211d1e;
+// link colors
+$color__link: #333;
+$color__link-hover: lighten( #211d1e, 35% );
+$color__link-visited: #333;
+// color pallete
+$light-green: #39b54a;
+$green: #25a258;
+$dark-green: #ef803c;
+$light-blue: #00aeef;
+$blue: #5154a3;
+$light-red: #f0803d;
+
+// Typography
+//================================================================================
+$font-size__base: 16;
+// The default font family.
+$font-family__base: sans-serif !default;
+// Header sizes
+$h1-font-size: 2    * $font-size__base !default;
+$h2-font-size: 1.5  * $font-size__base !default;
+$h3-font-size: 1.17 * $font-size__base !default;
+$h4-font-size: 1    * $font-size__base !default;
+$h5-font-size: 0.83 * $font-size__base !default;
+$h6-font-size: 0.67 * $font-size__base !default;
+
+// Layout
+//================================================================================
+$gutter: 1em;

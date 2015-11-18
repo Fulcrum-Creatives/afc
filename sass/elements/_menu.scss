@@ -1,0 +1,122 @@
+/*---------------------------------------------------------
+ * Menu
+---------------------------------------------------------*/
+.primary-nav {
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin: 0;
+  top: 82px;
+  @include media_query(1090px) {
+    position: relative;
+    display: inline-block;
+    margin-left: 4em;
+    width: auto;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    top: auto;
+  }
+  .nav {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: $blue;
+    @include media_query(1090px) {
+      background-color: #fff;
+    }
+    & > li {
+      position: relative;
+      float: none;
+      @include media_query(1090px) {
+        float: left;
+      }
+    }
+    & > li > a {
+      display: block;
+      padding: 1em;
+      @include media_query(1090px) {
+        padding: 1em 1em 2em;
+      }
+    }
+    ul {
+      width: 100%;
+      position: relative;
+      list-style: none;
+      background-color: $blue;
+      margin: 0;
+      padding-left: 1em;
+      overflow: hidden;
+      display: none;
+      @include media_query(1090px) {
+        position: absolute;
+        width: auto;
+        min-width: 200px;
+        padding: 0;
+      }
+      li {
+        width: 50%;
+        float: left;
+        white-space: nowrap;
+        &:hover {
+          background-color: $light-blue;
+        }
+        @include media_query(1090px) {
+          width: auto;
+          float: none;
+        }
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 1em;
+          color: #fff;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      @include media_query(1090px) {
+        color: $color__link;
+      }
+    }
+  }
+}
+.footer-nav {
+  max-width: 950px;
+  margin: 0 auto;
+  display: none;
+  @include media_query(850px) {
+    display: block;
+  }
+  .primary-nav__home {
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      width: 16.666%;
+      float: left;
+      font-weight: bold;
+      padding-right: 0.5em;
+    }
+    ul {
+      li {
+        float: none;
+        font-weight: normal;
+        width: 100%;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    padding: 0.5em 0;
+  }
+  .nav__search {
+    display: none;
+  }
+}
