@@ -19,7 +19,7 @@
           </a>
         </li>
         <li>
-          <?php _e( '&copy; ' . date('Y') . 'Action for Children. All Rights Reserved.' , FCWP_TEXTDOMAIN ); ?>
+          <?php _e( '&copy; ' . date('Y') . ' Action for Children. All Rights Reserved.' , FCWP_TEXTDOMAIN ); ?>
         </li>
       </ul>
     </div>
