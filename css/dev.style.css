@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/wp-framework
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.3
+Version: 1.0.4
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -840,7 +840,7 @@ img {
   .home-page__header-text {
     font-size: 48px;
     font-size: 3em;
-    padding: 0 0 1.5em;
+    padding: 0 0 0.5em;
   }
 }
 
