@@ -53,6 +53,11 @@
     }
   }
 }
+.why-give {
+  &:before {
+    content: "Give Now";
+  }
+}
 .header__aside-menu {
   background: $blue url(images/icons/menu.png) center center no-repeat;
   width: 36px;
