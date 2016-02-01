@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/wp-framework
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.8
+Version: 1.0.9
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -901,6 +901,7 @@ img {
 }
 .header-divider__donate.why-give:after {
   content: "Give Now";
+  white-space: nowrap;
 }
 
 .hero-image__caption {

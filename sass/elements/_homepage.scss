@@ -65,6 +65,7 @@
   &.why-give {
     &:after {
       content: "Give Now";
+      white-space: nowrap;
     }
   }
 }
