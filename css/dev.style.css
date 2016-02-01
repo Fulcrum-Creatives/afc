@@ -791,7 +791,7 @@ img {
   }
 }
 
-.why-give:before {
+.why-give:after {
   content: "Give Now";
 }
 
