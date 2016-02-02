@@ -5,14 +5,33 @@
   @include font-size(32);
   color: $green;
   font-family: "Garamond W01", "Times New Roman";
-  padding: 0 0 0.5em;
   max-width: 950px;
   margin: 0 auto;
   text-align: center;
   letter-spacing: 2px;
+  p {
+    margin-bottom: 1em;
+    @include media_query(500px) {
+      margin-bottom: 0.25em;
+    }
+  }
   @include media_query(750px) {
     @include font-size(48);
-    padding: 0 0 0.5em;
+  }
+}
+.finder {
+  width: 475px;
+  height: 130px;
+  margin: 0 auto 3em;
+  clear: both;
+  padding-top: 1em;
+  display: none;
+  iframe {
+    width: 475px;
+    height: 130px;
+  }
+  @include media_query(500px) {
+    display: block;
   }
 }
 .home-page__header-divider {

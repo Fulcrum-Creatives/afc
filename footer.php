@@ -1,9 +1,6 @@
 <footer class="body__footer" role="contentinfo">
   <div class="content__wrapper">
     <?php get_template_part('template-parts/menu', 'footer');?>
-    <div class="finder">
-      <iframe src="http://ohiochildcarefinder.org/find-child-care-connect/8.html" frameborder="0" scrolling="no" target="_blank"></iframe>
-    </div>
     <div class="footer__info">
       <ul>
         <li>

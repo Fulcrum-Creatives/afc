@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/wp-framework
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.10
+Version: 1.0.11
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -830,17 +830,41 @@ img {
   font-size: 2em;
   color: #25a258;
   font-family: "Garamond W01", "Times New Roman";
-  padding: 0 0 0.5em;
   max-width: 950px;
   margin: 0 auto;
   text-align: center;
   letter-spacing: 2px;
 }
+.home-page__header-text p {
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 500px) {
+  .home-page__header-text p {
+    margin-bottom: 0.25em;
+  }
+}
 @media screen and (min-width: 750px) {
   .home-page__header-text {
     font-size: 48px;
     font-size: 3em;
-    padding: 0 0 0.5em;
+  }
+}
+
+.finder {
+  width: 475px;
+  height: 130px;
+  margin: 0 auto 3em;
+  clear: both;
+  padding-top: 1em;
+  display: none;
+}
+.finder iframe {
+  width: 475px;
+  height: 130px;
+}
+@media screen and (min-width: 500px) {
+  .finder {
+    display: block;
   }
 }
 
@@ -1217,18 +1241,6 @@ img {
   clear: both;
   padding: 1.5em 0;
   margin-top: 1em;
-}
-
-.finder {
-  width: 475px;
-  height: 130px;
-  margin: 0 auto;
-  clear: both;
-  padding-top: 1em;
-}
-.finder iframe {
-  width: 100%;
-  height: auto;
 }
 
 /*---------------------------------------------------------
